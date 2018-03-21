@@ -4,10 +4,14 @@
   "version": "0.0.0",
   "description": "A light syntax theme based on Google's Material Design palette. A fork of atom-material-syntax.",
   "keywords": [
+    "material",
+    "design",
+    "Google",
+    "light",
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/element-light-syntax",
+  "repository": "https://github.com/paysonwallach/element-light-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
