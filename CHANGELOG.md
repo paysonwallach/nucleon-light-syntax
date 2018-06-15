@@ -4,4 +4,5 @@
 
 ### Changed
 - Darkened gutter text and highlight colors
+- Lightened invisible characters
 - Changed cursor color to cyan
