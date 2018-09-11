@@ -1,12 +1,12 @@
 .syntax--js {
     .syntax--constant {
-        color: @very-light-gray;
+        color: @very-dark-gray;
     }
 
     .syntax--support {
         &.syntax--variable {
             &.syntax--property {
-                color: @very-light-gray;
+                color: @very-dark-gray;
             }
             &.syntax--property.syntax--dom {
                 color: @blue;
@@ -27,7 +27,7 @@
             color: @blue;
         }
         &.syntax--other.syntax--object {
-            color: @very-light-gray;
+            color: @red;
         }
         &.syntax--other.syntax--object.syntax--property {
             color: @blue;
@@ -35,9 +35,9 @@
     }
 
     .syntax--string.syntax--quoted.syntax--template {
-      .syntax--other.syntax--object.syntax--property {
-          color: @green;
-      }
+        .syntax--other.syntax--object.syntax--property {
+            color: @green;
+        }
     }
 
     .syntax--constant {
@@ -55,6 +55,10 @@
     .syntax--delimiter.syntax--object.syntax--comma,
     .syntax--brace.syntax--curly {
         color: @cyan;
+
+        .syntax--comment & {
+            color: @syntax-comment-color;
+        }
     }
 
     .syntax--export .syntax--variable.syntax--default {
