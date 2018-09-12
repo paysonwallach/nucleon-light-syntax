@@ -1,11 +1,16 @@
 # Changelog
 
+## [0.3.1] - 2018-09-12
+
+### Fixed
+- CSS tag highlighting
+
 ## [0.3.0] - 2018-09-11
 
 ### Changed
 - Changed default variable color to red
 - Changed default constant color to blue
-- Adjusted graytones for improved readability
+- Adjusted gray tones for improved readability
 
 ### Fixed
 - Unreadable JavaScript variable highlighting color
