@@ -31,7 +31,7 @@
 
     .syntax--entity {
         &.syntax--tag {
-            color: @light-gray;
+            color: @red;
         }
 
         &.syntax--id {
@@ -45,6 +45,12 @@
 
             + .syntax--constant.syntax--numeric:not(.syntax--color) {
                 color: @strong-orange;
+            }
+        }
+
+        &.syntax--section {
+            &.syntax--bracket {
+                color: @dark-gray;
             }
         }
     }
