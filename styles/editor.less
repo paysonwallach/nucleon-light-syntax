@@ -1,0 +1,66 @@
+@import "syntax-variables";
+
+atom-text-editor {
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
+
+    .wrap-guide {
+        background-color: @syntax-indent-guide-color;
+    }
+
+    .indent-guide {
+        color: @syntax-indent-guide-color;
+    }
+
+    .invisible-character {
+        color: @syntax-invisible-character-color;
+    }
+
+    .cursor-line {
+        background-color: darken(@syntax-background-color, 2.5%);
+    }
+
+    .gutter {
+        background-color: @syntax-gutter-background-color;
+        color: @syntax-gutter-text-color;
+
+        .line-number {
+            &.cursor-line {
+                background-color: darken(@syntax-background-color, 2.5%);
+                color: @syntax-gutter-text-color-selected;
+            }
+
+            &.cursor-line-no-selection {
+                color: @syntax-gutter-text-color-selected;
+            }
+        }
+    }
+
+    .fold-marker:after,
+    .gutter .line-number.folded,
+    .gutter .line-number:after {
+        color: @light-gray;
+    }
+
+    .invisible {
+        color: @syntax-text-color;
+    }
+
+    .cursor {
+        color: @syntax-cursor-color;
+        border-width: 2px;
+    }
+
+    .selection .region {
+        background-color: @syntax-selection-color;
+    }
+
+    .search-results .syntax--marker .region {
+        background-color: transparent;
+        border: 1px solid @syntax-result-marker-color;
+    }
+
+    .search-results .syntax--marker.current-result .region {
+        border: 1px solid @syntax-result-marker-color-selected;
+    }
+}
