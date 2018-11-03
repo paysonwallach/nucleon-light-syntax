@@ -1,45 +1,27 @@
-.syntax--python {
-    .syntax--meta {
-        &.syntax--function-call {
-            color: @blue;
+.syntax--source.syntax--python {
+    .syntax--keyword.syntax--operator {
+        color: @strong-orange;
+    }
 
-            .syntax--punctuation {
-                color: @cyan;
-            }
+    .syntax--keyword.syntax--operator {
+        &.syntax--assignment {
+            color: @very-dark-gray;
+        }
 
-            .syntax--arguments {
-                color: @indigo;
-
-                &.syntax--punctuation {
-                    color: @cyan;
-                }
-            }
+        &.syntax--logical.syntax--python {
+            color: @purple;
         }
     }
 
-    .syntax--variable {
-        &.syntax--self {
-            color: @pink;
-        }
-    }
+    .syntax--meta.syntax--function-call {
+        color: @blue;
 
-    .syntax--meta {
-        .syntax--punctuation {
-            &.syntax--inheritance, &.syntax--section {
-                color: @cyan;
-            }
-        }
-    }
-
-    .syntax--variable {
-        &.syntax--parameter {
+        &.syntax--arguments {
             color: @cyan;
         }
     }
 
-    .syntax--keyword {
-        &.syntax--operator {
-            color: @purple;
-        }
+    .syntax--variable.syntax--parameter {
+        color: @orange;
     }
 }
