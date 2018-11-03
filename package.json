@@ -1,7 +1,7 @@
 {
   "name": "element-light-syntax",
   "theme": "syntax",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "A light syntax theme based on Google's Material Design palette. A fork of atom-material-syntax.",
   "keywords": [
     "material",
