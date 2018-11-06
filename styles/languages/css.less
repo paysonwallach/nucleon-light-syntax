@@ -5,7 +5,7 @@
         }
 
         &.syntax--property-name {
-            color: @light-teal;
+            color: @teal;
         }
     }
 
@@ -17,11 +17,11 @@
 
     .syntax--constant {
         &.syntax--numeric {
-            color: @light-orange;
+            color: @yellow;
         }
 
         &.syntax--color {
-            color: @light-orange;
+            color: @yellow;
 
             .syntax--punctuation {
                 color: currentColor;
@@ -29,17 +29,11 @@
         }
     }
 
-    .syntax--entity {
-        &.syntax--tag {
-            color: @red;
-        }
-
-        &.syntax--id {
-            color: @purple;
-        }
-    }
-
     .syntax--punctuation {
+        &.syntax--definition.syntax--entity {
+            color: @gray;
+        }
+
         &.syntax--delimiter {
             color: @cyan;
 
@@ -52,6 +46,20 @@
             &.syntax--bracket {
                 color: @dark-gray;
             }
+        }
+    }
+
+    .syntax--entity {
+        &.syntax--tag {
+            color: @red;
+        }
+
+        &.syntax--id {
+            color: @violet;
+        }
+
+        &.syntax--other.syntax--attribute-name.syntax--parent-selector > .syntax--punctuation.syntax--definition {
+            color: @cyan;
         }
     }
 }

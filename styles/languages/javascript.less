@@ -1,9 +1,9 @@
 .syntax--js {
-    .syntax--constant {
+    &.syntax--constant {
         color: @very-dark-gray;
     }
 
-    .syntax--support {
+    &.syntax--support {
         &.syntax--variable {
             &.syntax--property {
                 color: @very-dark-gray;
@@ -14,7 +14,7 @@
         }
     }
 
-    .syntax--entity {
+    &.syntax--entity {
         &.syntax--name {
             &.syntax--type {
                 color: @orange;
@@ -22,25 +22,29 @@
         }
     }
 
-    .syntax--variable {
+    &.syntax--keyword.syntax--operator {
+        color: @cyan;
+    }
+
+    &.syntax--variable {
         &.syntax--property {
             color: @blue;
         }
         &.syntax--other.syntax--object {
-            color: @red;
+            color: @very-dark-gray;
         }
         &.syntax--other.syntax--object.syntax--property {
             color: @blue;
         }
     }
 
-    .syntax--string.syntax--quoted.syntax--template {
-        .syntax--other.syntax--object.syntax--property {
-            color: @green;
-        }
+    &.syntax--string.syntax--quoted.syntax--template {
+      .syntax--other.syntax--object.syntax--property {
+          color: @green;
+      }
     }
 
-    .syntax--constant {
+    &.syntax--constant {
         &.syntax--numeric {
             color: @strong-orange;
         }
@@ -50,10 +54,10 @@
         }
     }
 
-    .syntax--punctuation.syntax--begin,
-    .syntax--punctuation.syntax--end,
-    .syntax--delimiter.syntax--object.syntax--comma,
-    .syntax--brace.syntax--curly {
+    &.syntax--punctuation.syntax--begin,
+    &.syntax--punctuation.syntax--end,
+    &.syntax--delimiter.syntax--object.syntax--comma,
+    &.syntax--brace.syntax--curly {
         color: @cyan;
 
         .syntax--comment & {
@@ -61,7 +65,7 @@
         }
     }
 
-    .syntax--export .syntax--variable.syntax--default {
-        color: @purple;
+    &.syntax--export .syntax--variable.syntax--default {
+        color: @violet;
     }
 }
