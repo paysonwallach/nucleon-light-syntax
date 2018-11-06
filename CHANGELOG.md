@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.5.0] – 2018-11-06
+
+### Added
+- Syntax support for C/C++
+
+### Changed
+- Renamed to "Nucleon"
+
+## [0.4.0] – 2018-11-03
+
+### Added
+- Syntax support for Swift
+
+### Changed
+- Improved highlighting for Python
+
 ## [0.3.1] - 2018-09-12
 
 ### Fixed
