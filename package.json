@@ -1,5 +1,5 @@
 {
-  "name": "element-light-syntax",
+  "name": "nucleon-light-syntax",
   "theme": "syntax",
   "version": "0.4.0",
   "description": "A light syntax theme based on Google's Material Design palette. A fork of atom-material-syntax.",
