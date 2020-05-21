@@ -1,7 +1,7 @@
 {
   "name": "nucleon-light-syntax",
   "theme": "syntax",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A light syntax theme based on Atom's One Light theme, built with Google's Material Design palette.",
   "keywords": [
     "material",
