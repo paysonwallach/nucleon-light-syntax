@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.5.1] – 2020-05-21
+
+### Added
+- Syntax support for Vala
+
 ## [0.5.0] – 2018-11-06
 
 ### Added

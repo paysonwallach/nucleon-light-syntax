@@ -1,0 +1,21 @@
+.syntax--vala {
+  &.syntax--object,
+  &.syntax--variable,
+  &.syntax--string.syntax--interpolated {
+    color: @very-light-gray;
+  }
+
+  &.syntax--base,
+  &.syntax--this,
+  &.syntax--field {
+    color: @red;
+  }
+
+  &.syntax--class.syntax--parent.syntax--base {
+    color: darken(@orange, 10%);
+  }
+
+  &.syntax--class.syntax--parent.syntax--subclass {
+    color: @red;
+  }
+}
